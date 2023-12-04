@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noi Linux on web</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .dock {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: fixed;
+            background-color: #141414;
+            width: 70;
+            height: 100%;
+        }
+        
+        .dock img {
+            width: 64px;
+            /* 设置图片的宽度为100px */
+            height: 64px;
+            /* 设置图片的高度为100px */
+            object-fit: cover;
+            /* 使图片填充其容器 */
+            border-radius: 5px;
+            /* 设置图片的边框半径 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            /* 设置图片之间的间距 */
+        }
+        
+        .dock img:hover {
+            border-color: #2B2B2B;
+        }
+        
+        .dock button.active img {
+            border-color: #2B2B2B;
+        }
+        /* 让Dock栏靠左并且上下填满页面 */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            /* 设置页面高度为视口高度，使Dock栏上下填满页面 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dock">
+        <button>
+            <img src="./pic/vscode.png" alt="Dock 1" class="active">
+        </button>
+        <button>
+            <img src="./pic/codeblocks.png" alt="Dock 2">
+        </button>
+        <a href="#">
+            <img src="./pic/calculator.png" alt="Dock 3">
+        </a>
+        <a href="#">
+            <img src="./pic/text-editor.png" alt="Dock 4">
+        </a>
+        <a href="#">
+            <img src="./pic/bash.png" alt="Dock 5">
+        </a>
+    </div>
+    <div class="background">
+        <img </div>
+</body>
+
+</html>
